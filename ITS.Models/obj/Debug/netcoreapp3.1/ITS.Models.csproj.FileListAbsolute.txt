@@ -1,0 +1,8 @@
+C:\SKSFile\ITSProject\ITS\ITS.Models\bin\Debug\netcoreapp3.1\ITS.Models.deps.json
+C:\SKSFile\ITSProject\ITS\ITS.Models\bin\Debug\netcoreapp3.1\ITS.Models.dll
+C:\SKSFile\ITSProject\ITS\ITS.Models\bin\Debug\netcoreapp3.1\ITS.Models.pdb
+C:\SKSFile\ITSProject\ITS\ITS.Models\obj\Debug\netcoreapp3.1\ITS.Models.AssemblyInfoInputs.cache
+C:\SKSFile\ITSProject\ITS\ITS.Models\obj\Debug\netcoreapp3.1\ITS.Models.AssemblyInfo.cs
+C:\SKSFile\ITSProject\ITS\ITS.Models\obj\Debug\netcoreapp3.1\ITS.Models.csproj.CoreCompileInputs.cache
+C:\SKSFile\ITSProject\ITS\ITS.Models\obj\Debug\netcoreapp3.1\ITS.Models.dll
+C:\SKSFile\ITSProject\ITS\ITS.Models\obj\Debug\netcoreapp3.1\ITS.Models.pdb

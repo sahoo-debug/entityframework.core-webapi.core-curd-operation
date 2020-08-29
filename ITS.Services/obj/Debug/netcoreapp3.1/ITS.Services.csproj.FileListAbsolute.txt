@@ -1,0 +1,12 @@
+C:\SKSFile\ITSProject\ITS\ITS.Services\bin\Debug\netcoreapp3.1\ITS.Services.deps.json
+C:\SKSFile\ITSProject\ITS\ITS.Services\bin\Debug\netcoreapp3.1\ITS.Services.dll
+C:\SKSFile\ITSProject\ITS\ITS.Services\bin\Debug\netcoreapp3.1\ITS.Services.pdb
+C:\SKSFile\ITSProject\ITS\ITS.Services\obj\Debug\netcoreapp3.1\ITS.Services.csprojAssemblyReference.cache
+C:\SKSFile\ITSProject\ITS\ITS.Services\obj\Debug\netcoreapp3.1\ITS.Services.AssemblyInfoInputs.cache
+C:\SKSFile\ITSProject\ITS\ITS.Services\obj\Debug\netcoreapp3.1\ITS.Services.AssemblyInfo.cs
+C:\SKSFile\ITSProject\ITS\ITS.Services\obj\Debug\netcoreapp3.1\ITS.Services.csproj.CoreCompileInputs.cache
+C:\SKSFile\ITSProject\ITS\ITS.Services\obj\Debug\netcoreapp3.1\ITS.Services.dll
+C:\SKSFile\ITSProject\ITS\ITS.Services\obj\Debug\netcoreapp3.1\ITS.Services.pdb
+C:\SKSFile\ITSProject\ITS\ITS.Services\bin\Debug\netcoreapp3.1\ITS.Core.dll
+C:\SKSFile\ITSProject\ITS\ITS.Services\bin\Debug\netcoreapp3.1\ITS.Core.pdb
+C:\SKSFile\ITSProject\ITS\ITS.Services\obj\Debug\netcoreapp3.1\ITS.Services.csproj.CopyComplete

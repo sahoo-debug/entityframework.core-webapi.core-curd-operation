@@ -1,0 +1,11 @@
+C:\SKSFile\ITSProject\ITS\ITS.Core\bin\Debug\netcoreapp3.1\ITS.Core.deps.json
+C:\SKSFile\ITSProject\ITS\ITS.Core\bin\Debug\netcoreapp3.1\ITS.Core.runtimeconfig.json
+C:\SKSFile\ITSProject\ITS\ITS.Core\bin\Debug\netcoreapp3.1\ITS.Core.runtimeconfig.dev.json
+C:\SKSFile\ITSProject\ITS\ITS.Core\bin\Debug\netcoreapp3.1\ITS.Core.dll
+C:\SKSFile\ITSProject\ITS\ITS.Core\bin\Debug\netcoreapp3.1\ITS.Core.pdb
+C:\SKSFile\ITSProject\ITS\ITS.Core\obj\Debug\netcoreapp3.1\ITS.Core.AssemblyInfoInputs.cache
+C:\SKSFile\ITSProject\ITS\ITS.Core\obj\Debug\netcoreapp3.1\ITS.Core.AssemblyInfo.cs
+C:\SKSFile\ITSProject\ITS\ITS.Core\obj\Debug\netcoreapp3.1\ITS.Core.csproj.CoreCompileInputs.cache
+C:\SKSFile\ITSProject\ITS\ITS.Core\obj\Debug\netcoreapp3.1\ITS.Core.dll
+C:\SKSFile\ITSProject\ITS\ITS.Core\obj\Debug\netcoreapp3.1\ITS.Core.pdb
+C:\SKSFile\ITSProject\ITS\ITS.Core\obj\Debug\netcoreapp3.1\ITS.Core.genruntimeconfig.cache
