@@ -31,6 +31,10 @@ namespace ITS.ServiceAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(c =>
+            {
+                c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+            });
             var connection = Configuration.GetConnectionString("DBcon");
             services.AddDbContextPool<SKSTestDBContext>(opt => opt.UseSqlServer(connection));
             services.AddControllers();
@@ -38,6 +42,7 @@ namespace ITS.ServiceAPI
             services.AddTransient<IStepRepository, StepRepository>();
             services.AddTransient<IItemRepository, ItemRepository>();
             services.AddTransient<IStepService, StepService>();
+            services.AddTransient<IItemService, ItemService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -51,6 +56,8 @@ namespace ITS.ServiceAPI
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors(options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());//cors
 
             app.UseAuthorization();
 
