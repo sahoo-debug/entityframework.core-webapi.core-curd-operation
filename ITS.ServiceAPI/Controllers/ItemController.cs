@@ -21,11 +21,11 @@ namespace ITS.ServiceAPI.Controllers
         }
 
 
-        [Route("getallitems")]
+        [Route("getallitems/{id}")]
         [HttpGet]
-        public IList<Item> GetallItems()
+        public IList<Item> GetallItems(int id)
         {
-            return _itemService.GetAllItems(1);
+            return _itemService.GetAllItems(id);
         }
 
         [Route("getitem/{id}")]
@@ -36,30 +36,36 @@ namespace ITS.ServiceAPI.Controllers
         }
 
         [Route("additem")]
-        [HttpGet]
-        public bool AddItem()
+        [HttpPost]
+        public bool AddItem([FromBody]Item item)
         {
-            var item = new Item { Title = "title_", Description = "updated description_", StepId =1 };
-            _itemService.AddItem(item);
-            return true;
+            if (item != null)
+            {
+                item.ItemId = 0;
+                _itemService.AddItem(item);
+                return true;
+            }
+            else return false;
         }
 
-        [Route("removeitem")]
-        [HttpGet]
-        public bool RemoveItem()
+        [Route("removeitem/{id}")]
+        [HttpDelete]
+        public bool RemoveItem(long id)
         {
-            _itemService.ArchiveItem(3);
+            _itemService.ArchiveItem(id);
             return true;
         }
 
         [Route("updateitem")]
-        [HttpGet]
-        public bool UpdateItem()
+        [HttpPost]
+        public bool UpdateItem([FromBody] Item item)
         {
-            var item = new Item { Title="updated title", Description="updated description" };
-            _itemService.UpdateItem(item);
-            return true;
+            if (item != null & item.ItemId > 0)
+            {
+                _itemService.UpdateItem(item);
+                return true;
+            }
+            else return false;
         }
-
     }
 }

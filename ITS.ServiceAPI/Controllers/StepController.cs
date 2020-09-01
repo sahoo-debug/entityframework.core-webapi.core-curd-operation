@@ -36,20 +36,17 @@ namespace ITS.ServiceAPI.Controllers
         }
 
         [Route("addstep")]
-        [HttpGet]
-        public bool AddStep()
+        [HttpPost]
+        public IList<Step> AddStep()
         {
-            var step = new Step { StepId = 2, StepName = "Step_" };
-            _stepService.AddStep(step);
-            return true;
+            return _stepService.AddStep();
         }
 
-        [Route("removestep")]
-        [HttpGet]
-        public bool RemoveStep()
+        [Route("removestep/{id}")]
+        [HttpDelete]
+        public IList<Step> RemoveStep(long id)
         {
-            _stepService.RemoveStep(3);
-            return true;
+            return _stepService.ArchiveStep(id);
         }
 
         [Route("updatestep")]
