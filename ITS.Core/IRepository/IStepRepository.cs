@@ -7,7 +7,7 @@ namespace ITS.Core.IRepository
 {
     public interface IStepRepository : IBaseRepository<Step>
     {
-        void AddStep(Step step);
+        void AddStep();
         void RemoveStep(long id);
         void ArchiveStep(long id);
         void UpdateStep(Step step);
