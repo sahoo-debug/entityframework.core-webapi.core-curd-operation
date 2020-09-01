@@ -18,7 +18,7 @@ namespace ITS.Core.Repository
         public void AddItem(Item item)
         {
            item.IsActive = true;
-            Add(item);
+           Add(item);
         }
         public void ArchiveItem(long id)
         {

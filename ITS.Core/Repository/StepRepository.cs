@@ -15,10 +15,19 @@ namespace ITS.Core.Repository
             _context = context;
         }
 
-        public void AddStep(Step step)
+        public void AddStep()
         {
-            step.IsActive = true;
-            Add(step);
+            Step stepEntity = new Step { IsActive = true };
+            var step = _context.Step.OrderByDescending(x => x.StepId).Take(1).FirstOrDefault();
+            if (step != null)
+            {
+                stepEntity.StepName = "Step " + (step.StepId + 1);
+            }
+            else
+            {
+                stepEntity.StepName = "Step 1";
+            }
+            Add(stepEntity);
         }
         public void RemoveStep(long id)
         {
