@@ -17,28 +17,31 @@ namespace ITS.Services.Services
         }
         public IList<Step> GetAllSteps()
         {
-            return _stepRepository.GetAll().ToList();
+            return _stepRepository.GetAllByFilter(x => x.IsActive == true).ToList();
         }
 
         public Step GetStep(long id)
         {
             return _stepRepository.GetById(id);
         }
-        public void AddStep(Step step)
+        public IList<Step> AddStep()
         {
-            _stepRepository.AddStep(step);
+            _stepRepository.AddStep();
+            return GetAllSteps();
         }
-        public void RemoveStep(long id)
-        {
-            _stepRepository.RemoveStep(id);
-        }
-        public void ArchiveStep(long id)
+        public IList<Step> ArchiveStep(long id)
         {
             _stepRepository.ArchiveStep(id);
+            return GetAllSteps();
         }
         public void UpdateStep(Step step)
         {
             _stepRepository.UpdateStep(step);
         }
+        public void RemoveStep(long id)
+        {
+            _stepRepository.RemoveStep(id);
+        }
+        
     }
 }

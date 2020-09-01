@@ -17,7 +17,7 @@ namespace ITS.Services.Services
         }
         public IList<Item> GetAllItems(long stepId)
         {
-            return _itemRepository.GetAllByFilter(x => x.StepId == stepId).ToList();
+            return _itemRepository.GetAllByFilter(x => x.StepId == stepId && x.IsActive == true).ToList();
         }
         public Item GetItem(long id)
         {
