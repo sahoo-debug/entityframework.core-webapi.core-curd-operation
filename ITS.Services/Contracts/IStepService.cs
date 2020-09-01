@@ -9,9 +9,10 @@ namespace ITS.Services.Contracts
     {
         IList<Step> GetAllSteps();
         Step GetStep(long id);
-        void AddStep(Step step);
-        void RemoveStep(long id);
-        void ArchiveStep(long id);
+        IList<Step> AddStep();
+        IList<Step> ArchiveStep(long id);
         void UpdateStep(Step step);
+        void RemoveStep(long id);
+        
     }
 }
